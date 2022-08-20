@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -22,9 +23,13 @@
         font-size: 50px;
         font-weight: 500;
       }
+      .btn{
+        border: none;
+        transition: transform 0.3s linear;
+      }
       .btn:hover{
         transform: scale(1.1);
-        transition: transform 0.2s linear;
+        transition: transform 0.3s linear;
         color: white;
       }
     </style>
@@ -50,19 +55,22 @@
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link text-white" href="#Serviços">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Nossa História</a>
+              <a class="nav-link text-white" href="#Portfólio">Portfólio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Blog</a>
+              <a class="nav-link text-white" href="#Sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Orçamento</a>
+              <a class="nav-link text-white" href="#Formulário">Formulário</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contatos</a>
+              <a class="nav-link text-white" href="#Time">Time</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Parceiros">Parceiros</a>
             </li>
           </ul>
         </div>
@@ -85,7 +93,9 @@
       <div class="container pt-5 ">
         <div class="row justify-content-center my-5">
           <div class="col lg-7 text-center">
-            <h1>Services</h1>
+            <a name="Serviços">
+              <h1>Services</h1>
+            </a>
             Veja alguns dos nossos seviços.
           </div>          
         </div>
@@ -110,7 +120,9 @@
     </section>
 
     <!-- Portfólio -->
-      <h1 class="bg-primary m-0 text-center text-white handw">Nosso Portfólio</h1>
+      <a name="Portfólio">
+        <h1 class="bg-primary m-0 text-center text-white handw">Nosso Portfólio</h1>
+      </a>
         <div class="row row-cols-1 row-cols-md-2 col-12 bg-primary mx-0 my-0 p-3">
           <div class="col my-3">
             <div class="card btn">
@@ -153,7 +165,9 @@
     <!-- Formulário -->
     <section class="">
     <div class = "forms-image w-100 text-white">
-      <br><h1 class="text-center handw">Contato</h1><br>
+      <br><a name="Formulário">
+        <h1 class="text-center handw">Contato</h1>
+      </a><br>
       <form>
         <div class="container">
           <div class="row justify-content-center">
@@ -200,17 +214,19 @@
     <section class="py-3" style="background-color: darkgrey;">
       <div class="container">
         <div class="row justify-content-around">
-          <h2 class="text-center text-white handw my-5">Nossos parceiros</h2>
-          <div class="col-3 text-center my-3">
+          <a name="Parceiros">
+            <h1 class="text-center text-white handw my-5">Nossos parceiros</h1>
+          </a>
+          <div class="col-3 text-center my-3 btn">
             <img src="images/google.png" class="w-25 vh-25"></img>
           </div>
-          <div class="col-3 text-center my-3">
+          <div class="col-3 text-center my-3 btn">
             <img src="images/apple.png" class="w-25 vh-25"></img>
           </div>
-          <div class="col-3 text-center my-3">
+          <div class="col-3 text-center my-3 btn">
             <img src="images/telegram.png" class="w-25 vh-25"></img>
           </div>
-          <div class="col-3 text-center my-3">
+          <div class="col-3 text-center my-3 btn">
             <img src="images/gti-placeholder.png" class="w-25 vh-25"></img>
           </div>
         </div>
