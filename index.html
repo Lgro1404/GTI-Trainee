@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Empresa de Apps</title>
+    
+    <link rel="stylesheet" href="Stylesheet/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
     <style>
       .banner-image {
         background-image: url('images/pessoas-trabalhando-2.jpg');
         background-size: cover;
       }
+      .forms-image {
+        
+        background-color: gray;
+        background-size: cover;
+      }
     </style>
-  </head>
-  <body>
+
     <!-- Navbar  -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
       <div class="container">
@@ -57,12 +65,58 @@
       class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
     >
       <div class="content text-center">
-        <h1 class="text-white">Seja Bem Vindo a melhor empresa de apps
+        <h1 class="text-white">Placeholder text
         </h1>
         <button type="button" class="btn btn-info">
           Saiba Mais</button>
       </div>
     </div>
+
+    <!-- Formulário -->
+    <div class = "forms-image w-100 text-white">
+      <br><h1 class="text-center">Contato</h1><br>
+      <form>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <div class="form-group">
+                <label>Nome</label>
+                <input class="form-control" placeholder="Seu Nome">  
+              </div>
+              <div class="form-group">
+                <label >Telefone</label>
+                <input class="form-control" placeholder="Seu Telefone">  
+              </div>
+              <div class="form-group">
+                <label >Email</label>
+                <input class="form-control" placeholder="Seu Email">  
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="form-group">
+                <label>Email address</label>
+                <textarea class="form-control" rows="6" placeholder="Enter eail"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          .botaolaranja {
+              background-color: orange !important;
+          }
+          .botaolaranja:hover {
+              background-color: orangered !important;
+              transition: 0.5s;
+          }
+        </style>
+        <div class="text-center">
+          <br>
+          <button type="submit" class="btn botaolaranja">Enviar</button>
+        </div><br>
+      </form>
+    </div>
+    
+    <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,4 +1,1 @@
-.banner-image {
-  background-image: url('images/pessoas-trabalhando.jpg');
-  background-size: cover;
-}
+.inputsize.form-control { height: max-content !important; }
