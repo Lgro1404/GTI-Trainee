@@ -11,6 +11,11 @@
         background-image: url('images/pessoas-trabalhando-2.jpg');
         background-size: cover;
       }
+      .forms-image {
+        
+        background-color: gray;
+        background-size: cover;
+      }
       @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
       .handw{
         font-family: cursive, sans-serif;
@@ -26,7 +31,7 @@
   </head>
   <body>
     <!-- Navbar  -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 col-12">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 col-12 bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">NOME DA EMPRESA</a>
         <button
@@ -68,14 +73,15 @@
     <div
       class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
       <div class="content text-center">
-        <h1 class="text-white">Seja Bem Vindo a melhor empresa de apps
-        </h1>
+        <h1 class="text-white">Seja bem-vindo à melhor empresa de apps
+        </h1><br>
         <button type="button" class="btn btn-info">
           Saiba Mais</button>
       </div>
     </div>
+
     <!-- Portfólio -->
-    <h1 class="bg-primary m-0 text-center handw">Nosso Portfólio</h1>
+      <h1 class="bg-primary m-0 text-center text-white handw">Nosso Portfólio</h1>
         <div class="row row-cols-1 row-cols-md-2 col-12 bg-primary mx-0 my-0 p-3">
           <div class="col my-3">
             <div class="card btn">
@@ -114,6 +120,50 @@
             </div>
           </div>
         </div>
+
+    <!-- Formulário -->
+    <div class = "forms-image w-100 text-white">
+      <br><h1 class="text-center handw">Contato</h1><br>
+      <form>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <div class="form-group">
+                <label>Nome</label>
+                <input class="form-control" placeholder="Seu Nome">  
+              </div>
+              <div class="form-group">
+                <label >Telefone</label>
+                <input class="form-control" placeholder="Seu Telefone">  
+              </div>
+              <div class="form-group">
+                <label >Email</label>
+                <input class="form-control" placeholder="Seu Email">  
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="form-group">
+                <label>Mensagem</label>
+                <textarea class="form-control" rows="6" placeholder="Digite sua mensagem"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          .botaolaranja {
+              background-color: orange !important;
+          }
+          .botaolaranja:hover {
+              background-color: orangered !important;
+              transition: 0.5s;
+          }
+        </style>
+        <div class="text-center">
+          <br>
+          <button type="submit" class="btn botaolaranja">Enviar</button>
+        </div><br>
+      </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
